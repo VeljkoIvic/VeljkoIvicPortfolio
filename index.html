@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Veljko Ivic — Softwareentwickler & Elektroplaner</title>
+  <meta name="description" content="Portfolio von Veljko Ivic — Softwareentwickler & Elektroplaner aus Brüttisellen, Schweiz. Projekte, Werdegang und Kontakt.">
+  <meta name="author" content="Veljko Ivic">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Veljko Ivic — Softwareentwickler & Elektroplaner">
+  <meta property="og:description" content="Strom trifft Code — Elektroprojekte planen und die Software dazu bauen.">
+  <meta property="og:url" content="https://veljkoivic.ch">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ff5436'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='bold' fill='white' text-anchor='middle'%3EVI%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- dekorative Hintergrund-Blobs -->
+  <div class="blob blob--1" aria-hidden="true"></div>
+  <div class="blob blob--2" aria-hidden="true"></div>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav">
+    <a class="nav__brand" href="#top">
+      <span class="nav__logo">VI</span>
+      Veljko Ivic
+    </a>
+    <div class="nav__right">
+      <div class="nav__links" id="navLinks"><!-- via JS --></div>
+      <button class="btn-pill" id="langToggle" type="button" aria-label="Sprache wechseln">
+        <span class="lang-de" id="langDe">DE</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-en" id="langEn">EN</span>
+      </button>
+      <button class="btn-icon" id="themeToggle" type="button" aria-label="Theme wechseln">
+        <span id="themeIcon">☀</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="top">
+    <div class="hero__grid">
+      <div class="hero__col">
+        <h1 class="hero__name">
+          <span>Veljko</span>
+          <span class="outline">Ivic.</span>
+        </h1>
+        <p class="hero__role" id="heroRole"></p>
+        <p class="hero__tagline" id="heroTagline"></p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" id="ctaWork" href="#projects"></a>
+          <a class="btn btn--ghost" id="ctaContact" href="#contact"></a>
+          <a class="btn btn--ghost" id="ctaCv" href="#" download target="_blank"></a>
+        </div>
+      </div>
+      <div class="hero__photo">
+        <div class="hero__photo-bg" aria-hidden="true"></div>
+        <div class="hero__badge" id="heroBadge"></div>
+        <img class="hero__img" src="assets/veljko.jpg" alt="Veljko Ivic">
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Über mich ===== -->
+  <section class="section" id="about" data-reveal>
+    <div class="section-head">
+      <span class="section-head__num" id="aboutNum" style="color:var(--accent)"></span>
+      <h2 class="section-head__title" id="aboutHead"></h2>
+    </div>
+    <div class="about__lead-row">
+      <p class="about__lead" id="aboutLead"></p>
+      <div class="about__side">
+        <p class="about__body" id="aboutBody"></p>
+        <div class="facts" id="facts"><!-- via JS --></div>
+      </div>
+    </div>
+
+    <div class="hobbies">
+      <h3 class="hobbies__title" id="hobbiesTitle"></h3>
+      <p class="hobbies__intro" id="hobbiesBody"></p>
+      <div class="hobbies__grid" id="hobbies"><!-- via JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== Stack ===== -->
+  <section class="section section--tight" id="stack" data-reveal>
+    <div class="section-head">
+      <span class="section-head__num" id="stackNum" style="color:var(--violet)"></span>
+      <h2 class="section-head__title" id="stackHead"></h2>
+    </div>
+    <div class="stack-grid" id="stackGrid"><!-- via JS --></div>
+  </section>
+
+  <!-- ===== Werdegang ===== -->
+  <section class="section" id="work" data-reveal>
+    <div class="section-head">
+      <span class="section-head__num" id="workNum" style="color:var(--green)"></span>
+      <h2 class="section-head__title" id="workHead"></h2>
+    </div>
+    <div class="work-grid">
+      <div>
+        <div class="timeline__head">
+          <span class="timeline__head-dot" style="background:var(--accent)"></span>
+          <h3 class="timeline__head-title" id="jobsTitle"></h3>
+        </div>
+        <div id="jobs"><!-- via JS --></div>
+        <div class="timeline__foot"></div>
+      </div>
+      <div>
+        <div class="timeline__head">
+          <span class="timeline__head-dot" style="background:var(--violet)"></span>
+          <h3 class="timeline__head-title" id="eduTitle"></h3>
+        </div>
+        <div id="education"><!-- via JS --></div>
+        <div class="timeline__foot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projekte ===== -->
+  <section class="section section--tight" id="projects" data-reveal>
+    <div class="section-head">
+      <span class="section-head__num" id="projectsNum" style="color:var(--yellow)"></span>
+      <h2 class="section-head__title" id="projectsHead"></h2>
+    </div>
+    <div class="projects-grid" id="projectsGrid"><!-- via JS --></div>
+  </section>
+
+  <!-- ===== Kontakt ===== -->
+  <section class="section" id="contact" data-reveal>
+    <div class="section-head">
+      <span class="section-head__num" id="contactNum" style="color:var(--accent)"></span>
+      <h2 class="section-head__title" id="contactHead"></h2>
+    </div>
+    <h3 class="contact__lead" id="contactLead"></h3>
+    <a class="contact__mail" id="contactMail" href="#"></a>
+    <div class="socials" id="socials"><!-- via JS --></div>
+    <footer class="footer">
+      <span>© 2026 Veljko Ivic · veljkoivic.ch</span>
+      <span id="footerRight"></span>
+    </footer>
+  </section>
+
+  <!-- Scripts: Daten zuerst, dann Logik -->
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
