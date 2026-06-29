@@ -398,7 +398,6 @@ a { color: inherit; }
   font-size: 14.5px;
   line-height: 1.6;
   color: var(--muted);
-  text-wrap: pretty;
 }
 
 /* ---------- Stack ---------- */
