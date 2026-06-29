@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Sicherheit: Content-Security-Policy (Defense-in-Depth). Ergänzt durch _headers (Netlify/Cloudflare). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+
   <title>Veljko Ivic — Softwareentwickler & Elektroplaner</title>
   <meta name="description" content="Portfolio von Veljko Ivic — Softwareentwickler & Elektroplaner aus Brüttisellen, Schweiz. Projekte, Werdegang und Kontakt.">
   <meta name="author" content="Veljko Ivic">
@@ -11,7 +14,9 @@
   <meta property="og:title" content="Veljko Ivic — Softwareentwickler & Elektroplaner">
   <meta property="og:description" content="Strom trifft Code — Elektroprojekte planen und die Software dazu bauen.">
   <meta property="og:url" content="https://veljkoivic.ch">
+  <meta property="og:image" content="https://veljkoivic.ch/assets/veljko.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://veljkoivic.ch/assets/veljko.jpg">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ff5436'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='bold' fill='white' text-anchor='middle'%3EVI%3C/text%3E%3C/svg%3E">
 
@@ -57,9 +62,9 @@
         <p class="hero__role" id="heroRole"></p>
         <p class="hero__tagline" id="heroTagline"></p>
         <div class="hero__cta">
-          <a class="btn btn--primary" id="ctaWork" href="#projects"></a>
-          <a class="btn btn--ghost" id="ctaContact" href="#contact"></a>
-          <a class="btn btn--ghost" id="ctaCv" href="#" download target="_blank"></a>
+          <a class="btn btn--primary" id="ctaWork" href="#projects">Projekte ansehen →</a>
+          <a class="btn btn--ghost" id="ctaContact" href="#contact">Kontakt</a>
+          <a class="btn btn--ghost" id="ctaCv" href="assets/Lebenslauf-Veljko-Ivic-DE.pdf" download target="_blank" rel="noopener">Lebenslauf ↓</a>
         </div>
       </div>
       <div class="hero__photo">
@@ -73,7 +78,7 @@
   <!-- ===== Über mich ===== -->
   <section class="section" id="about" data-reveal>
     <div class="section-head">
-      <span class="section-head__num" id="aboutNum" style="color:var(--accent)"></span>
+      <span class="section-head__num" id="aboutNum"></span>
       <h2 class="section-head__title" id="aboutHead"></h2>
     </div>
     <div class="about__lead-row">
@@ -94,7 +99,7 @@
   <!-- ===== Stack ===== -->
   <section class="section section--tight" id="stack" data-reveal>
     <div class="section-head">
-      <span class="section-head__num" id="stackNum" style="color:var(--violet)"></span>
+      <span class="section-head__num" id="stackNum"></span>
       <h2 class="section-head__title" id="stackHead"></h2>
     </div>
     <div class="stack-grid" id="stackGrid"><!-- via JS --></div>
@@ -103,13 +108,13 @@
   <!-- ===== Werdegang ===== -->
   <section class="section" id="work" data-reveal>
     <div class="section-head">
-      <span class="section-head__num" id="workNum" style="color:var(--green)"></span>
+      <span class="section-head__num" id="workNum"></span>
       <h2 class="section-head__title" id="workHead"></h2>
     </div>
     <div class="work-grid">
       <div>
         <div class="timeline__head">
-          <span class="timeline__head-dot" style="background:var(--accent)"></span>
+          <span class="timeline__head-dot timeline__head-dot--accent"></span>
           <h3 class="timeline__head-title" id="jobsTitle"></h3>
         </div>
         <div id="jobs"><!-- via JS --></div>
@@ -117,7 +122,7 @@
       </div>
       <div>
         <div class="timeline__head">
-          <span class="timeline__head-dot" style="background:var(--violet)"></span>
+          <span class="timeline__head-dot timeline__head-dot--violet"></span>
           <h3 class="timeline__head-title" id="eduTitle"></h3>
         </div>
         <div id="education"><!-- via JS --></div>
@@ -129,7 +134,7 @@
   <!-- ===== Projekte ===== -->
   <section class="section section--tight" id="projects" data-reveal>
     <div class="section-head">
-      <span class="section-head__num" id="projectsNum" style="color:var(--yellow)"></span>
+      <span class="section-head__num" id="projectsNum"></span>
       <h2 class="section-head__title" id="projectsHead"></h2>
     </div>
     <div class="projects-grid" id="projectsGrid"><!-- via JS --></div>
@@ -138,11 +143,11 @@
   <!-- ===== Kontakt ===== -->
   <section class="section" id="contact" data-reveal>
     <div class="section-head">
-      <span class="section-head__num" id="contactNum" style="color:var(--accent)"></span>
+      <span class="section-head__num" id="contactNum"></span>
       <h2 class="section-head__title" id="contactHead"></h2>
     </div>
     <h3 class="contact__lead" id="contactLead"></h3>
-    <a class="contact__mail" id="contactMail" href="#"></a>
+    <a class="contact__mail" id="contactMail" href="mailto:ivic-veljko@hotmail.ch">ivic-veljko@hotmail.ch</a>
     <div class="socials" id="socials"><!-- via JS --></div>
     <footer class="footer">
       <span>© 2026 Veljko Ivic · veljkoivic.ch</span>

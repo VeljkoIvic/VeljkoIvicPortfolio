@@ -12,7 +12,6 @@
       if (v == null) continue;
       if (k === "class") node.className = v;
       else if (k === "text") node.textContent = v;
-      else if (k === "html") node.innerHTML = v;
       else if (k === "style") node.setAttribute("style", v);
       else node.setAttribute(k, v);
     }
@@ -51,7 +50,7 @@
       wrap.appendChild(link);
       if (n.href === "#contact") {
         wrap.appendChild(
-          el("a", { class: "nav__link", href: t.cvHref, download: "", target: "_blank" }, t.cvLabel)
+          el("a", { class: "nav__link", href: t.cvHref, download: "", target: "_blank", rel: "noopener" }, t.cvLabel)
         );
       }
     });
@@ -166,7 +165,7 @@
     t.cols.forEach((c) => {
       const items = t.projects.filter((p) => p.cat === c.key);
       const cards = items.map((p) => {
-        const card = el("a", { class: "proj-card", href: p.href, target: p.target }, [
+        const card = el("a", { class: "proj-card", href: p.href, target: p.target, rel: p.target === "_blank" ? "noopener" : null }, [
           el("div", { class: "proj-card__top" }, [
             el("span", { class: "proj-card__mark", style: `background:${c.color}1f;color:${p.color}`, text: p.mark }),
             el("span", { class: "proj-card__arrow", text: p.arrow }),
@@ -261,7 +260,7 @@
       },
       { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
     );
-    targets.forEach((el) => io.observe(el));
+    targets.forEach((node) => io.observe(node));
   }
 
   /* ---------- Scroll-Spy (aktiver Nav-Punkt) ---------- */
