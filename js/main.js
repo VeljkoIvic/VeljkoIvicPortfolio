@@ -84,7 +84,7 @@
       facts.appendChild(
         el("div", { class: "fact" }, [
           el("span", { class: "fact__dot", style: `background:${f.color}` }),
-          el("div", { class: "fact__big", style: `color:${f.color}` }, [
+          el("div", { class: f.unit ? "fact__big fact__big--stat" : "fact__big", style: `color:${f.color}` }, [
             f.big,
             f.unit ? el("span", { class: "fact__unit", text: f.unit }) : null,
           ]),
