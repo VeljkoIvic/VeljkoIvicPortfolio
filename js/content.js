@@ -22,8 +22,8 @@ const CONTENT = {
     aboutBody:
       "Strukturierte, lernbereite Persönlichkeit mit Leidenschaft für sauberen Code und durchdachte Lösungen. Erfahrung als Junior Projektleiter, DevOps für CAD-/BIM-Tools und ein solides Fundament aus der Elektrotechnik — ich verbinde beide Welten in jedem Projekt.",
     facts: [
-      { big: "7+", label: "Jahre Erfahrung in der Technik", color: "#ff5436" },
-      { big: "3", label: "Projekte, die ich umgesetzt habe", color: "#7c5cff" },
+      { big: "7+", unit: "Jahre", label: "Erfahrung in Technik & Software", color: "#ff5436" },
+      { big: "3", unit: "Projekte", label: "umgesetzt — live & in Arbeit", color: "#7c5cff" },
       { big: "Sprachen", label: "Deutsch · Serbisch · Englisch · Japanisch", color: "#1fd97a" },
       { big: "DevOps", label: "für CAD-/BIM-Tools — Automatisierung & Standards", color: "#e0a800" },
     ],
@@ -103,8 +103,8 @@ const CONTENT = {
     aboutBody:
       "A structured, eager-to-learn person with a passion for clean code and well-thought-out solutions. Experience as a junior project lead, DevOps for CAD/BIM tools and a solid foundation in electrical engineering — I bring both worlds together in every project.",
     facts: [
-      { big: "7+", label: "Years of experience in tech", color: "#ff5436" },
-      { big: "3", label: "Projects I’ve delivered", color: "#7c5cff" },
+      { big: "7+", unit: "years", label: "of experience in tech & software", color: "#ff5436" },
+      { big: "3", unit: "projects", label: "delivered — live & in progress", color: "#7c5cff" },
       { big: "Languages", label: "German · Serbian · English · Japanese", color: "#1fd97a" },
       { big: "DevOps", label: "for CAD/BIM tools — automation & standards", color: "#e0a800" },
     ],

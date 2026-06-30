@@ -357,6 +357,13 @@ a { color: inherit; }
   line-height: 1;
   letter-spacing: -.02em;
 }
+.fact__unit {
+  margin-left: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: var(--muted);
+}
 .fact__rule { height: 1px; background: var(--line); margin: 14px 0 12px; }
 .fact__label { font-size: 13px; line-height: 1.45; color: var(--muted); }
 
@@ -743,8 +750,10 @@ a { color: inherit; }
 
 /* ---------- Tablet-Layout-Feinschliff ---------- */
 @media (max-width: 860px) {
-  .about__lead-row { flex-direction: column; }
-  .about__side { max-width: none; }
+  /* Lead & Text stapeln per Umbruch (nicht column-flex, sonst wird
+     die flex-basis zur Höhe und reisst eine riesige Lücke auf) */
+  .about__lead-row { gap: clamp(22px, 4vw, 36px); }
+  .about__side { flex-basis: 100%; max-width: none; }
   .work-grid { grid-template-columns: 1fr; }
 }
 
