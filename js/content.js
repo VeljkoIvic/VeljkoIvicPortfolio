@@ -14,7 +14,7 @@ const CONTENT = {
     ctaContact: "Kontakt",
     photoBadge: "Hallo!",
     cvLabel: "Lebenslauf",
-    cvHref: "assets/Lebenslauf-Veljko-Ivic-DE.pdf",
+    cvHref: "assets/Lebenslauf_Veljko-Ivic_DE.pdf",
 
     h_about: "Über mich",
     aboutLead:
@@ -94,8 +94,8 @@ const CONTENT = {
     ctaWork: "View work",
     ctaContact: "Get in touch",
     photoBadge: "Hi!",
-    cvLabel: "Résumé",
-    cvHref: "assets/Lebenslauf-Veljko-Ivic-EN.pdf",
+    cvLabel: "Cover Letter",
+    cvHref: "assets/Cover-Letter_Veljko-Ivic_EN.pdf",
 
     h_about: "About",
     aboutLead:

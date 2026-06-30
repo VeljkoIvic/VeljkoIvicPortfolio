@@ -22,8 +22,8 @@ site/
 │  └─ main.js        Logik: Rendering, Sprache, Theme, Cursor, Scroll
 └─ assets/
    ├─ veljko.jpg
-   ├─ Lebenslauf-Veljko-Ivic-DE.pdf
-   └─ Lebenslauf-Veljko-Ivic-EN.pdf
+   ├─ Lebenslauf_Veljko-Ivic_DE.pdf
+   └─ Cover-Letter_Veljko-Ivic_EN.pdf
 ```
 
 ## Inhalte bearbeiten
