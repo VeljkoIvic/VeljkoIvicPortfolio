@@ -765,6 +765,13 @@ a { color: inherit; }
   .hero__photo { flex: 1 1 100%; max-width: 360px; }
   .facts { gap: 12px; }
   .footer { justify-content: flex-start; }
+
+  /* Gleich grosse Abstände zwischen allen Themen/Abschnitten */
+  .section,
+  .section--tight {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 /* ---------- Sehr kleine Handys ---------- */
