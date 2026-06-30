@@ -772,6 +772,9 @@ a { color: inherit; }
     padding-top: 56px;
     padding-bottom: 56px;
   }
+  /* "Mehr als Code & Pläne" liegt im selben Abschnitt – Abstand davor
+     an die Lücke zwischen den Themen angleichen (56 + 56). */
+  .hobbies { margin-top: 112px; }
 }
 
 /* ---------- Sehr kleine Handys ---------- */
