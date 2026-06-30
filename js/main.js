@@ -284,6 +284,51 @@
     onScroll();
   }
 
+  /* ---------- Mobiles Menü (Hamburger) ---------- */
+  function initMenu() {
+    const burger = $("#navBurger");
+    const links = $("#navLinks");
+    if (!burger || !links) return;
+
+    function close() {
+      links.classList.remove("is-open");
+      burger.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+      burger.setAttribute("aria-label", "Menü öffnen");
+    }
+    function toggle() {
+      const open = links.classList.toggle("is-open");
+      burger.classList.toggle("is-open", open);
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Menü schließen" : "Menü öffnen");
+    }
+
+    burger.addEventListener("click", toggle);
+
+    // Nach Klick auf einen Navigations-Link schließen
+    links.addEventListener("click", (e) => {
+      if (e.target.closest(".nav__link")) close();
+    });
+
+    // Klick außerhalb der Navigation schließt das Menü
+    document.addEventListener("click", (e) => {
+      if (links.classList.contains("is-open") && !e.target.closest(".nav")) close();
+    });
+
+    // Escape schließt das Menü
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") close();
+    });
+
+    // Beim Wechsel auf Desktop-Breite immer zurücksetzen
+    if (window.matchMedia) {
+      const desktop = window.matchMedia("(min-width: 961px)");
+      const onChange = () => { if (desktop.matches) close(); };
+      if (desktop.addEventListener) desktop.addEventListener("change", onChange);
+      else if (desktop.addListener) desktop.addListener(onChange);
+    }
+  }
+
   /* ---------- Eigener Cursor (Strom-Thema) ---------- */
   function initCursor() {
     if (!window.matchMedia || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
@@ -356,6 +401,7 @@
 
     initReveal();
     initScrollSpy();
+    initMenu();
     initCursor();
   }
 
