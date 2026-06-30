@@ -50,7 +50,10 @@
       wrap.appendChild(link);
       if (n.href === "#contact") {
         wrap.appendChild(
-          el("a", { class: "nav__link", href: t.cvHref, download: "", target: "_blank", rel: "noopener" }, t.cvLabel)
+          el("a", { class: "nav__link", href: t.cvHref, download: "", target: "_blank", rel: "noopener" }, [
+            el("span", { class: "nav__dot" }),
+            t.cvLabel,
+          ])
         );
       }
     });
