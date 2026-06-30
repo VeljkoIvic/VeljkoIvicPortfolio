@@ -136,7 +136,7 @@ a { color: inherit; }
 .nav__right { display: flex; align-items: center; gap: clamp(14px, 2.2vw, 30px); }
 .nav__links {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   gap: clamp(12px, 1.6vw, 26px);
   font-size: 14px;
@@ -191,6 +191,32 @@ a { color: inherit; }
   color: var(--fg);
   font-size: 16px;
 }
+
+/* Hamburger (nur Mobile/Tablet sichtbar – siehe Media-Query) */
+.nav__burger {
+  display: none;
+  position: relative;
+  width: 40px; height: 38px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  cursor: pointer;
+  padding: 0;
+}
+.nav__burger span {
+  position: absolute;
+  left: 10px; right: 10px;
+  height: 2px;
+  background: var(--fg);
+  border-radius: 2px;
+  transition: transform .25s ease, opacity .2s ease, top .25s ease;
+}
+.nav__burger span:nth-child(1) { top: 13px; }
+.nav__burger span:nth-child(2) { top: 18px; }
+.nav__burger span:nth-child(3) { top: 23px; }
+.nav__burger.is-open span:nth-child(1) { top: 18px; transform: rotate(45deg); }
+.nav__burger.is-open span:nth-child(2) { opacity: 0; }
+.nav__burger.is-open span:nth-child(3) { top: 18px; transform: rotate(-45deg); }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -661,6 +687,95 @@ a { color: inherit; }
 }
 @keyframes cursor-spin { to { transform: rotate(360deg); } }
 
+/* ============================================================
+   Responsive: PC ≥960px (volle Zeilen-Nav) · Tablet/Handy <960px (Hamburger)
+   ============================================================ */
+
+/* ---------- Tablet & Handy: Hamburger-Menü ---------- */
+@media (max-width: 960px) {
+  .nav {
+    padding-left: clamp(14px, 4vw, 56px);
+    padding-right: clamp(14px, 4vw, 56px);
+  }
+  .nav__right { gap: 10px; }
+
+  .nav__burger { display: inline-flex; }
+
+  /* Links als ausklappbares Panel direkt unter der Leiste */
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px clamp(14px, 4vw, 56px) 14px;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    font-size: 16px;
+    background: var(--nav);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 26px 44px -30px rgba(0, 0, 0, .6);
+    /* geschlossener Zustand */
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .25s ease, transform .25s ease, visibility 0s linear .25s;
+  }
+  .nav__links.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity .25s ease, transform .25s ease;
+  }
+  /* Jeder Link volle Breite, gut antippbar, sauber untereinander */
+  .nav__link {
+    padding: 14px 4px;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav__links .nav__link:last-child { border-bottom: none; }
+}
+
+/* ---------- Tablet-Layout-Feinschliff ---------- */
+@media (max-width: 860px) {
+  .about__lead-row { flex-direction: column; }
+  .about__side { max-width: none; }
+  .work-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Handy ---------- */
 @media (max-width: 640px) {
   .hero__name { line-height: .92; }
+  .hero { padding-top: clamp(104px, 15vh, 150px); }
+  .hero__grid { gap: 32px; }
+  .hero__photo { flex: 1 1 100%; max-width: 360px; }
+  .facts { gap: 12px; }
+  .footer { justify-content: flex-start; }
+}
+
+/* ---------- Sehr kleine Handys ---------- */
+@media (max-width: 400px) {
+  .nav__brand { font-size: 16px; gap: 8px; }
+  .nav__logo { width: 30px; height: 30px; font-size: 13px; }
+  .nav__right { gap: 8px; }
+  .btn-pill { padding: 6px 9px; }
+  .hero__cta .btn { width: 100%; justify-content: center; }
+  .facts { grid-template-columns: 1fr; }
+}
+
+/* ---------- Bewegung reduzieren (Barrierefreiheit) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
