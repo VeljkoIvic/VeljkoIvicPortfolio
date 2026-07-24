@@ -95,7 +95,7 @@ const CONTENT = {
     ctaContact: "Get in touch",
     photoBadge: "Hi!",
     cvLabel: "Resume",
-    cvHref: "assets/Ressume_Veljko-Ivic_EN.pdf",
+    cvHref: "assets/Resume_Veljko-Ivic_EN.pdf",
 
     h_about: "About",
     aboutLead:
