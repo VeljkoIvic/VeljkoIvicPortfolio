@@ -23,7 +23,7 @@ const CONTENT = {
       "Strukturierte, lernbereite Persönlichkeit mit Leidenschaft für sauberen Code und durchdachte Lösungen. Erfahrung als Junior Projektleiter, DevOps für CAD-/BIM-Tools und ein solides Fundament aus der Elektrotechnik — ich verbinde beide Welten in jedem Projekt.",
     facts: [
       { big: "7+", unit: "Jahre", label: "Erfahrung in Technik & Software", color: "#ff5436" },
-      { big: "3", unit: "Projekte", label: "umgesetzt — live & in Arbeit", color: "#7c5cff" },
+      { big: "4", unit: "Projekte", label: "umgesetzt — live & in Arbeit", color: "#7c5cff" },
       { big: "Sprachen", label: "Deutsch · Serbisch · Englisch · Japanisch", color: "#1fd97a" },
       { big: "DevOps", label: "für CAD-/BIM-Tools — Automatisierung & Standards", color: "#e0a800" },
     ],
@@ -72,7 +72,9 @@ const CONTENT = {
       { cat: "live", name: "Fishertechservice", mark: "FT", color: "#1fd97a", desc: "Firmen-Website für einen Technik-Servicebetrieb — Konzept, Design und Umsetzung.", tags: ["Web", "Design", "UX"], href: "https://www.fishertechservice.ch", target: "_blank", arrow: "↗" },
       { cat: "progress", name: "Fishertechservice Dashboard", mark: "DB", color: "#ff5436", desc: "Internes Management-Tool zur Verwaltung von Material, Kunden und Arbeitszeit.", tags: ["C#", "Web", "MS SQL"], href: "https://github.com/VeljkoIvic/FischerTechService-Dashboard", target: "_blank", arrow: "↗" },
       { cat: "progress", name: "Chess Game", mark: "♞", color: "#1fd97a", desc: "Ein Schachspiel in C# — mit vollständiger Zuglogik und Spielregeln. Aktuell in Entwicklung.", tags: ["C#", ".NET", "OOP"], href: "https://github.com/VeljkoIvic/ChessGame", target: "_blank", arrow: "↗" },
+      { cat: "progress", name: "Monella", mark: "MO", color: "#7c5cff", desc: "Web-App für persönliche Buchhaltung, Budgetierung und digitale Belegverwaltung — der Beleg wird zur Buchung und erinnert zugleich an ablaufende Garantiefristen.", tags: ["Web", "Buchhaltung", "Budget"], href: "#contact", target: "_self", arrow: "→" },
       { cat: "planned", name: "Filmmaker Portfolio", mark: "FR", color: "#7c5cff", desc: "Portfolio-Website für einen befreundeten Filmregisseur — Fokus auf Bewegtbild und Storytelling.", tags: ["Web", "Motion", "Design"], href: "#contact", target: "_self", arrow: "→" },
+      { cat: "planned", name: "Collectio", mark: "CO", color: "#1fd97a", desc: "Web-App zur Verwaltung einer One-Piece-TCG-Kartensammlung — Kartenbestand digital erfassen, regelkonforme Decks bauen und den Marktwert per Preis-API im Blick behalten.", tags: ["Web", "TCG", "API"], href: "#contact", target: "_self", arrow: "→" },
     ],
 
     h_contact: "Kontakt",
@@ -104,7 +106,7 @@ const CONTENT = {
       "A structured, eager-to-learn person with a passion for clean code and well-thought-out solutions. Experience as a junior project lead, DevOps for CAD/BIM tools and a solid foundation in electrical engineering — I bring both worlds together in every project.",
     facts: [
       { big: "7+", unit: "years", label: "of experience in tech & software", color: "#ff5436" },
-      { big: "3", unit: "projects", label: "delivered — live & in progress", color: "#7c5cff" },
+      { big: "4", unit: "projects", label: "delivered — live & in progress", color: "#7c5cff" },
       { big: "Languages", label: "German · Serbian · English · Japanese", color: "#1fd97a" },
       { big: "DevOps", label: "for CAD/BIM tools — automation & standards", color: "#e0a800" },
     ],
@@ -153,7 +155,9 @@ const CONTENT = {
       { cat: "live", name: "Fishertechservice", mark: "FT", color: "#1fd97a", desc: "Company website for a technical service business — concept, design and build.", tags: ["Web", "Design", "UX"], href: "https://www.fishertechservice.ch", target: "_blank", arrow: "↗" },
       { cat: "progress", name: "Fishertechservice Dashboard", mark: "DB", color: "#ff5436", desc: "Internal management tool for tracking materials, clients and working hours.", tags: ["C#", "Web", "MS SQL"], href: "https://github.com/VeljkoIvic/FischerTechService-Dashboard", target: "_blank", arrow: "↗" },
       { cat: "progress", name: "Chess Game", mark: "♞", color: "#1fd97a", desc: "A chess game built in C# — with full move logic and game rules. Currently in development.", tags: ["C#", ".NET", "OOP"], href: "https://github.com/VeljkoIvic/ChessGame", target: "_blank", arrow: "↗" },
+      { cat: "progress", name: "Monella", mark: "MO", color: "#7c5cff", desc: "Web app for personal accounting, budgeting and digital receipt management — each receipt becomes a transaction and reminds you before warranties expire.", tags: ["Web", "Accounting", "Budget"], href: "#contact", target: "_self", arrow: "→" },
       { cat: "planned", name: "Filmmaker Portfolio", mark: "FR", color: "#7c5cff", desc: "Portfolio website for a filmmaker friend — focused on moving image and storytelling.", tags: ["Web", "Motion", "Design"], href: "#contact", target: "_self", arrow: "→" },
+      { cat: "planned", name: "Collectio", mark: "CO", color: "#1fd97a", desc: "Web app for managing a One Piece TCG card collection — track cards digitally, build rule-checked decks and monitor market value via a price API.", tags: ["Web", "TCG", "API"], href: "#contact", target: "_self", arrow: "→" },
     ],
 
     h_contact: "Contact",
