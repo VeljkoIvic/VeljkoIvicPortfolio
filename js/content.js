@@ -20,26 +20,26 @@ const CONTENT = {
     aboutLead:
       "Zwei Welten, eine Denkweise: die Präzision der Elektroplanung und die Kreativität der Softwareentwicklung.",
     aboutBody:
-      "Strukturierte, lernbereite Persönlichkeit mit Leidenschaft für sauberen Code und durchdachte Lösungen. Erfahrung als Junior Projektleiter, DevOps für CAD-/BIM-Tools und ein solides Fundament aus der Elektrotechnik — ich verbinde beide Welten in jedem Projekt.",
+      "Strukturierte, lernbereite Persönlichkeit mit Leidenschaft für sauberen Code und durchdachte Lösungen. Erfahrung als Junior Projektleiter, DevOps für CAD-/BIM-Tools und ein solides Fundament aus der Elektrotechnik, ich verbinde beide Welten in jedem Projekt.",
     facts: [
       { big: "7+", unit: "Jahre", label: "Erfahrung in Technik & Software", color: "#ff5436" },
-      { big: "4", unit: "Projekte", label: "umgesetzt — live & in Arbeit", color: "#7c5cff" },
+      { big: "4", unit: "Projekte", label: "umgesetzt, live & in Arbeit", color: "#7c5cff" },
       { big: "Sprachen", label: "Deutsch · Serbisch · Englisch · Japanisch", color: "#1fd97a" },
-      { big: "DevOps", label: "für CAD-/BIM-Tools — Automatisierung & Standards", color: "#e0a800" },
+      { big: "DevOps", label: "für CAD-/BIM-Tools, Automatisierung & Standards", color: "#e0a800" },
     ],
 
     hobbiesTitle: "Mehr als Code & Pläne",
     hobbiesBody:
-      "Ich brauche den Ausgleich zum Bildschirm — am liebsten draussen in der Natur, am Wasser oder unterwegs. Neugier, Disziplin und die Freude am Lernen ziehen sich durch alles, was ich neben der Arbeit mache.",
+      "Ich brauche den Ausgleich zum Bildschirm, am liebsten draussen in der Natur, am Wasser oder unterwegs. Neugier, Disziplin und die Freude am Lernen ziehen sich durch alles, was ich neben der Arbeit mache.",
     hobbies: [
       { num: "01", icon: "🌍", title: "Reisen", note: "Neue Orte, Kulturen und Perspektiven entdecken.", tint: "rgba(255,84,54,.14)", color: "#ff5436" },
-      { num: "02", icon: "🎣", title: "Fischen", note: "Ruhe und Geduld am Wasser — mein liebster Ausgleich.", tint: "rgba(124,92,255,.14)", color: "#7c5cff" },
+      { num: "02", icon: "🎣", title: "Fischen", note: "Ruhe und Geduld am Wasser, mein liebster Ausgleich.", tint: "rgba(124,92,255,.14)", color: "#7c5cff" },
       { num: "03", icon: "📷", title: "Fotografie", note: "Licht und Momente festhalten, mit Auge fürs Detail.", tint: "rgba(31,217,122,.14)", color: "#1fd97a" },
-      { num: "04", icon: "🏃", title: "Marathon & Fitness", note: "Disziplin im Training — aktuell auf die 42 km hin.", tint: "rgba(255,210,63,.16)", color: "#e0a800" },
+      { num: "04", icon: "🏃", title: "Marathon & Fitness", note: "Disziplin im Training, aktuell auf die 42 km hin.", tint: "rgba(255,210,63,.16)", color: "#e0a800" },
       { num: "05", icon: "🍳", title: "Kochen", note: "Gerne experimentieren und für Freunde kochen.", tint: "rgba(255,84,54,.14)", color: "#ff5436" },
-      { num: "06", icon: "日", title: "Japanisch", note: "Lerne die Sprache aktuell auf Niveau N5 — aus reiner Neugier.", tint: "rgba(124,92,255,.14)", color: "#7c5cff" },
-      { num: "07", icon: "👨‍👩‍👧", title: "Familie", note: "Zeit mit den Menschen, die zählen — mein Rückhalt und meine Energiequelle.", tint: "rgba(31,217,122,.14)", color: "#1fd97a" },
-      { num: "08", icon: "💻", title: "Coden & Tüfteln", note: "Eigene Ideen in kleinen Side-Projects umsetzen — einfach, weil es Spass macht.", tint: "rgba(255,210,63,.16)", color: "#e0a800" },
+      { num: "06", icon: "日", title: "Japanisch", note: "Lerne die Sprache aktuell auf Niveau N5, aus reiner Neugier.", tint: "rgba(124,92,255,.14)", color: "#7c5cff" },
+      { num: "07", icon: "👨‍👩‍👧", title: "Familie", note: "Zeit mit den Menschen, die zählen, mein Rückhalt und meine Energiequelle.", tint: "rgba(31,217,122,.14)", color: "#1fd97a" },
+      { num: "08", icon: "💻", title: "Coden & Tüfteln", note: "Eigene Ideen in kleinen Side-Projects umsetzen, einfach, weil es Spass macht.", tint: "rgba(255,210,63,.16)", color: "#e0a800" },
     ],
 
     h_stack: "Stack & Werkzeuge",
@@ -52,14 +52,14 @@ const CONTENT = {
     h_jobs: "Berufserfahrung",
     h_edu: "Ausbildung",
     work: [
-      { period: "2025 — Jetzt", role: "Junior Projektleiter", org: "Amstein + Walthert AG", desc: "Projektleitung und Fachplanung von Elektroprojekten. DevOps für CAD-/BIM-Tools (u.a. Revit) sowie Betreuung von Lernenden." },
-      { period: "2023 — 2024", role: "Elektroplaner", org: "HKG Engineering AG", desc: "Erstellung technischer Pläne und Schemas, projektbezogene Kundenkommunikation sowie Mitarbeit in Planung und Koordination." },
-      { period: "2021 — 2023", role: "Elektroinstallateur EFZ", org: "Eglin AG · Swisspro AG · Melcom AG", desc: "Installation, Service und Wartung elektrischer Anlagen sowie Neu- und Umbauten in Wohn- und Gewerbeobjekten. Lösungsorientierte Fehlersuche, saubere Verdrahtung nach Schema und technische Kundenberatung direkt vor Ort." },
+      { period: "2025-Jetzt", role: "Junior Projektleiter", org: "Amstein + Walthert AG", desc: "Projektleitung und Fachplanung von Elektroprojekten. DevOps für CAD-/BIM-Tools (u.a. Revit) sowie Betreuung von Lernenden." },
+      { period: "2023-2024", role: "Elektroplaner", org: "HKG Engineering AG", desc: "Erstellung technischer Pläne und Schemas, projektbezogene Kundenkommunikation sowie Mitarbeit in Planung und Koordination." },
+      { period: "2021-2023", role: "Elektroinstallateur EFZ", org: "Eglin AG · Swisspro AG · Melcom AG", desc: "Installation, Service und Wartung elektrischer Anlagen sowie Neu- und Umbauten in Wohn- und Gewerbeobjekten. Lösungsorientierte Fehlersuche, saubere Verdrahtung nach Schema und technische Kundenberatung direkt vor Ort." },
     ],
     education: [
-      { period: "Geplant", role: "Bachelor of Science in Informatik", org: "ZHAW — Zürcher Hochschule für Angewandte Wissenschaften", desc: "Geplantes Bachelorstudium zur weiteren Vertiefung in Software Engineering und Informatik." },
-      { period: "2024 — 2027", role: "Dipl. Informatiker HF", org: "Professional Bachelor in Computer Science", desc: "Breite Ausbildung mit Führungsfokus: Softwareentwicklung, Datenbanken und Architektur ebenso wie Projektmanagement, Betriebswirtschaft, Marketing und Mitarbeiterführung." },
-      { period: "2017 — 2021", role: "Elektroinstallateur EFZ", org: "Berufliche Grundbildung (Lehre)", desc: "Vierjährige Grundbildung: Installation, Wartung und Reparatur elektrischer Anlagen, Montage von Schaltkästen, Grundlagen der Steuerungs- und Gebäudetechnik sowie das Lesen technischer Zeichnungen." },
+      { period: "Geplant", role: "Bachelor of Science in Informatik", org: "ZHAW, Zürcher Hochschule für Angewandte Wissenschaften", desc: "Geplantes Bachelorstudium zur weiteren Vertiefung in Software Engineering und Informatik." },
+      { period: "2024-2027", role: "Dipl. Informatiker HF", org: "Professional Bachelor in Computer Science", desc: "Breite Ausbildung mit Führungsfokus: Softwareentwicklung, Datenbanken und Architektur ebenso wie Projektmanagement, Betriebswirtschaft, Marketing und Mitarbeiterführung." },
+      { period: "2017-2021", role: "Elektroinstallateur EFZ", org: "Berufliche Grundbildung (Lehre)", desc: "Vierjährige Grundbildung: Installation, Wartung und Reparatur elektrischer Anlagen, Montage von Schaltkästen, Grundlagen der Steuerungs- und Gebäudetechnik sowie das Lesen technischer Zeichnungen." },
     ],
 
     h_projects: "Projekte",
@@ -69,12 +69,12 @@ const CONTENT = {
       { key: "planned", title: "Geplant", color: "#7c5cff" },
     ],
     projects: [
-      { cat: "live", name: "Fishertechservice", mark: "FT", color: "#1fd97a", desc: "Firmen-Website für einen Technik-Servicebetrieb — Konzept, Design und Umsetzung.", tags: ["Web", "Design", "UX"], href: "https://www.fishertechservice.ch", target: "_blank", arrow: "↗" },
+      { cat: "live", name: "Fishertechservice", mark: "FT", color: "#1fd97a", desc: "Firmen-Website für einen Technik-Servicebetrieb, Konzept, Design und Umsetzung.", tags: ["Web", "Design", "UX"], href: "https://www.fishertechservice.ch", target: "_blank", arrow: "↗" },
       { cat: "progress", name: "Fishertechservice Dashboard", mark: "DB", color: "#ff5436", desc: "Internes Management-Tool zur Verwaltung von Material, Kunden und Arbeitszeit.", tags: ["C#", "Web", "MS SQL"], href: "https://github.com/VeljkoIvic/FischerTechService-Dashboard", target: "_blank", arrow: "↗" },
-      { cat: "progress", name: "Chess Game", mark: "♞", color: "#1fd97a", desc: "Ein Schachspiel in C# — mit vollständiger Zuglogik und Spielregeln. Aktuell in Entwicklung.", tags: ["C#", ".NET", "OOP"], href: "https://github.com/VeljkoIvic/ChessGame", target: "_blank", arrow: "↗" },
-      { cat: "progress", name: "Monella", mark: "MO", color: "#7c5cff", desc: "Web-App für persönliche Buchhaltung, Budgetierung und digitale Belegverwaltung — der Beleg wird zur Buchung und erinnert zugleich an ablaufende Garantiefristen.", tags: ["Web", "Buchhaltung", "Budget"], href: "#contact", target: "_self", arrow: "→" },
-      { cat: "planned", name: "Filmmaker Portfolio", mark: "FR", color: "#7c5cff", desc: "Portfolio-Website für einen befreundeten Filmregisseur — Fokus auf Bewegtbild und Storytelling.", tags: ["Web", "Motion", "Design"], href: "#contact", target: "_self", arrow: "→" },
-      { cat: "planned", name: "Collectio", mark: "CO", color: "#1fd97a", desc: "Web-App zur Verwaltung einer One-Piece-TCG-Kartensammlung — Kartenbestand digital erfassen, regelkonforme Decks bauen und den Marktwert per Preis-API im Blick behalten.", tags: ["Web", "TCG", "API"], href: "#contact", target: "_self", arrow: "→" },
+      { cat: "progress", name: "Chess Game", mark: "♞", color: "#1fd97a", desc: "Ein Schachspiel in C#, mit vollständiger Zuglogik und Spielregeln. Aktuell in Entwicklung.", tags: ["C#", ".NET", "OOP"], href: "https://github.com/VeljkoIvic/ChessGame", target: "_blank", arrow: "↗" },
+      { cat: "progress", name: "Monella", mark: "MO", color: "#7c5cff", desc: "Web-App für persönliche Buchhaltung, Budgetierung und digitale Belegverwaltung, der Beleg wird zur Buchung und erinnert zugleich an ablaufende Garantiefristen.", tags: ["Web", "Buchhaltung", "Budget"], href: "#contact", target: "_self", arrow: "→" },
+      { cat: "planned", name: "Filmmaker Portfolio", mark: "FR", color: "#7c5cff", desc: "Portfolio-Website für einen befreundeten Filmregisseur, Fokus auf Bewegtbild und Storytelling.", tags: ["Web", "Motion", "Design"], href: "#contact", target: "_self", arrow: "→" },
+      { cat: "planned", name: "Collectio", mark: "CO", color: "#1fd97a", desc: "Web-App zur Verwaltung einer One-Piece-TCG-Kartensammlung, Kartenbestand digital erfassen, regelkonforme Decks bauen und den Marktwert per Preis-API im Blick behalten.", tags: ["Web", "TCG", "API"], href: "#contact", target: "_self", arrow: "→" },
     ],
 
     h_contact: "Kontakt",
@@ -103,26 +103,26 @@ const CONTENT = {
     aboutLead:
       "Two worlds, one mindset: the precision of electrical planning and the creativity of software development.",
     aboutBody:
-      "A structured, eager-to-learn person with a passion for clean code and well-thought-out solutions. Experience as a junior project lead, DevOps for CAD/BIM tools and a solid foundation in electrical engineering — I bring both worlds together in every project.",
+      "A structured, eager-to-learn person with a passion for clean code and well-thought-out solutions. Experience as a junior project lead, DevOps for CAD/BIM tools and a solid foundation in electrical engineering, I bring both worlds together in every project.",
     facts: [
       { big: "7+", unit: "years", label: "of experience in tech & software", color: "#ff5436" },
-      { big: "4", unit: "projects", label: "delivered — live & in progress", color: "#7c5cff" },
+      { big: "4", unit: "projects", label: "delivered, live & in progress", color: "#7c5cff" },
       { big: "Languages", label: "German · Serbian · English · Japanese", color: "#1fd97a" },
-      { big: "DevOps", label: "for CAD/BIM tools — automation & standards", color: "#e0a800" },
+      { big: "DevOps", label: "for CAD/BIM tools, automation & standards", color: "#e0a800" },
     ],
 
     hobbiesTitle: "More than code & plans",
     hobbiesBody:
-      "I need a counterbalance to the screen — ideally outdoors in nature, by the water or on the road. Curiosity, discipline and the joy of learning run through everything I do outside of work.",
+      "I need a counterbalance to the screen, ideally outdoors in nature, by the water or on the road. Curiosity, discipline and the joy of learning run through everything I do outside of work.",
     hobbies: [
       { num: "01", icon: "🌍", title: "Travelling", note: "Discovering new places, cultures and perspectives.", tint: "rgba(255,84,54,.14)", color: "#ff5436" },
-      { num: "02", icon: "🎣", title: "Fishing", note: "Calm and patience by the water — my favourite reset.", tint: "rgba(124,92,255,.14)", color: "#7c5cff" },
+      { num: "02", icon: "🎣", title: "Fishing", note: "Calm and patience by the water, my favourite reset.", tint: "rgba(124,92,255,.14)", color: "#7c5cff" },
       { num: "03", icon: "📷", title: "Photography", note: "Capturing light and moments with an eye for detail.", tint: "rgba(31,217,122,.14)", color: "#1fd97a" },
-      { num: "04", icon: "🏃", title: "Marathon & Fitness", note: "Discipline in training — currently working towards 42 km.", tint: "rgba(255,210,63,.16)", color: "#e0a800" },
+      { num: "04", icon: "🏃", title: "Marathon & Fitness", note: "Discipline in training, currently working towards 42 km.", tint: "rgba(255,210,63,.16)", color: "#e0a800" },
       { num: "05", icon: "🍳", title: "Cooking", note: "Love to experiment and cook for friends.", tint: "rgba(255,84,54,.14)", color: "#ff5436" },
-      { num: "06", icon: "日", title: "Japanese", note: "Currently learning the language at N5 level — out of pure curiosity.", tint: "rgba(124,92,255,.14)", color: "#7c5cff" },
-      { num: "07", icon: "👨‍👩‍👧", title: "Family", note: "Time with the people who matter — my anchor and my source of energy.", tint: "rgba(31,217,122,.14)", color: "#1fd97a" },
-      { num: "08", icon: "💻", title: "Coding & Tinkering", note: "Turning my own ideas into small side projects — simply because it’s fun.", tint: "rgba(255,210,63,.16)", color: "#e0a800" },
+      { num: "06", icon: "日", title: "Japanese", note: "Currently learning the language at N5 level, out of pure curiosity.", tint: "rgba(124,92,255,.14)", color: "#7c5cff" },
+      { num: "07", icon: "👨‍👩‍👧", title: "Family", note: "Time with the people who matter, my anchor and my source of energy.", tint: "rgba(31,217,122,.14)", color: "#1fd97a" },
+      { num: "08", icon: "💻", title: "Coding & Tinkering", note: "Turning my own ideas into small side projects, simply because it’s fun.", tint: "rgba(255,210,63,.16)", color: "#e0a800" },
     ],
 
     h_stack: "Stack & Tools",
@@ -135,14 +135,14 @@ const CONTENT = {
     h_jobs: "Work experience",
     h_edu: "Education",
     work: [
-      { period: "2025 — Now", role: "Junior Project Lead", org: "Amstein + Walthert AG", desc: "Project management and specialist planning of electrical projects. DevOps for CAD/BIM tools (incl. Revit) and mentoring apprentices." },
-      { period: "2023 — 2024", role: "Electrical Planner", org: "HKG Engineering AG", desc: "Creating technical plans and schematics, project-based client communication, and contributing to planning and coordination." },
-      { period: "2021 — 2023", role: "Electrician EFZ", org: "Eglin AG · Swisspro AG · Melcom AG", desc: "Installation, service and maintenance of electrical systems plus new builds and conversions in residential and commercial properties. Solution-oriented fault finding, clean wiring to schematic and on-site technical client advice." },
+      { period: "2025-Now", role: "Junior Project Lead", org: "Amstein + Walthert AG", desc: "Project management and specialist planning of electrical projects. DevOps for CAD/BIM tools (incl. Revit) and mentoring apprentices." },
+      { period: "2023-2024", role: "Electrical Planner", org: "HKG Engineering AG", desc: "Creating technical plans and schematics, project-based client communication, and contributing to planning and coordination." },
+      { period: "2021-2023", role: "Electrician EFZ", org: "Eglin AG · Swisspro AG · Melcom AG", desc: "Installation, service and maintenance of electrical systems plus new builds and conversions in residential and commercial properties. Solution-oriented fault finding, clean wiring to schematic and on-site technical client advice." },
     ],
     education: [
-      { period: "Planned", role: "Bachelor of Science in Computer Science", org: "ZHAW — Zurich University of Applied Sciences", desc: "Planned bachelor’s degree to further deepen software engineering and computer science." },
-      { period: "2024 — 2027", role: "Dipl. Informatiker HF", org: "Professional Bachelor in Computer Science", desc: "A broad, leadership-focused programme: software development, databases and architecture alongside project management, business administration, marketing and people leadership." },
-      { period: "2017 — 2021", role: "Electrician EFZ", org: "Vocational education (apprenticeship)", desc: "Four-year apprenticeship: installation, maintenance and repair of electrical systems, assembly of control cabinets, fundamentals of control and building technology, and reading technical drawings." },
+      { period: "Planned", role: "Bachelor of Science in Computer Science", org: "ZHAW, Zurich University of Applied Sciences", desc: "Planned bachelor’s degree to further deepen software engineering and computer science." },
+      { period: "2024-2027", role: "Dipl. Informatiker HF", org: "Professional Bachelor in Computer Science", desc: "A broad, leadership-focused programme: software development, databases and architecture alongside project management, business administration, marketing and people leadership." },
+      { period: "2017-2021", role: "Electrician EFZ", org: "Vocational education (apprenticeship)", desc: "Four-year apprenticeship: installation, maintenance and repair of electrical systems, assembly of control cabinets, fundamentals of control and building technology, and reading technical drawings." },
     ],
 
     h_projects: "Projects",
@@ -152,12 +152,12 @@ const CONTENT = {
       { key: "planned", title: "Planned", color: "#7c5cff" },
     ],
     projects: [
-      { cat: "live", name: "Fishertechservice", mark: "FT", color: "#1fd97a", desc: "Company website for a technical service business — concept, design and build.", tags: ["Web", "Design", "UX"], href: "https://www.fishertechservice.ch", target: "_blank", arrow: "↗" },
+      { cat: "live", name: "Fishertechservice", mark: "FT", color: "#1fd97a", desc: "Company website for a technical service business, concept, design and build.", tags: ["Web", "Design", "UX"], href: "https://www.fishertechservice.ch", target: "_blank", arrow: "↗" },
       { cat: "progress", name: "Fishertechservice Dashboard", mark: "DB", color: "#ff5436", desc: "Internal management tool for tracking materials, clients and working hours.", tags: ["C#", "Web", "MS SQL"], href: "https://github.com/VeljkoIvic/FischerTechService-Dashboard", target: "_blank", arrow: "↗" },
-      { cat: "progress", name: "Chess Game", mark: "♞", color: "#1fd97a", desc: "A chess game built in C# — with full move logic and game rules. Currently in development.", tags: ["C#", ".NET", "OOP"], href: "https://github.com/VeljkoIvic/ChessGame", target: "_blank", arrow: "↗" },
-      { cat: "progress", name: "Monella", mark: "MO", color: "#7c5cff", desc: "Web app for personal accounting, budgeting and digital receipt management — each receipt becomes a transaction and reminds you before warranties expire.", tags: ["Web", "Accounting", "Budget"], href: "#contact", target: "_self", arrow: "→" },
-      { cat: "planned", name: "Filmmaker Portfolio", mark: "FR", color: "#7c5cff", desc: "Portfolio website for a filmmaker friend — focused on moving image and storytelling.", tags: ["Web", "Motion", "Design"], href: "#contact", target: "_self", arrow: "→" },
-      { cat: "planned", name: "Collectio", mark: "CO", color: "#1fd97a", desc: "Web app for managing a One Piece TCG card collection — track cards digitally, build rule-checked decks and monitor market value via a price API.", tags: ["Web", "TCG", "API"], href: "#contact", target: "_self", arrow: "→" },
+      { cat: "progress", name: "Chess Game", mark: "♞", color: "#1fd97a", desc: "A chess game built in C#, with full move logic and game rules. Currently in development.", tags: ["C#", ".NET", "OOP"], href: "https://github.com/VeljkoIvic/ChessGame", target: "_blank", arrow: "↗" },
+      { cat: "progress", name: "Monella", mark: "MO", color: "#7c5cff", desc: "Web app for personal accounting, budgeting and digital receipt management, each receipt becomes a transaction and reminds you before warranties expire.", tags: ["Web", "Accounting", "Budget"], href: "#contact", target: "_self", arrow: "→" },
+      { cat: "planned", name: "Filmmaker Portfolio", mark: "FR", color: "#7c5cff", desc: "Portfolio website for a filmmaker friend, focused on moving image and storytelling.", tags: ["Web", "Motion", "Design"], href: "#contact", target: "_self", arrow: "→" },
+      { cat: "planned", name: "Collectio", mark: "CO", color: "#1fd97a", desc: "Web app for managing a One Piece TCG card collection, track cards digitally, build rule-checked decks and monitor market value via a price API.", tags: ["Web", "TCG", "API"], href: "#contact", target: "_self", arrow: "→" },
     ],
 
     h_contact: "Contact",

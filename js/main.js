@@ -224,7 +224,7 @@
   function renderAll() {
     const t = CONTENT[lang];
     document.documentElement.lang = lang;
-    document.title = "Veljko Ivic — " + t.role;
+    document.title = "Veljko Ivic · " + t.role;
     renderNav(t);
     renderHero(t);
     renderAbout(t);
