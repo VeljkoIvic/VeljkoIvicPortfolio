@@ -94,8 +94,8 @@ const CONTENT = {
     ctaWork: "View work",
     ctaContact: "Get in touch",
     photoBadge: "Hi!",
-    cvLabel: "Cover Letter",
-    cvHref: "assets/Cover-Letter_Veljko-Ivic_EN.pdf",
+    cvLabel: "Resume",
+    cvHref: "assets/Ressume_Veljko-Ivic_EN.pdf",
 
     h_about: "About",
     aboutLead:

@@ -23,7 +23,7 @@ site/
 └─ assets/
    ├─ veljko.jpg
    ├─ Lebenslauf_Veljko-Ivic_DE.pdf
-   └─ Cover-Letter_Veljko-Ivic_EN.pdf
+   └─ Ressume_Veljko-Ivic_EN.pdf
 ```
 
 ## Inhalte bearbeiten
